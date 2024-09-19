@@ -1,6 +1,6 @@
 '''
 Danny Mok
-Ghidorah 
+Hot Cheetos
 SoftDev
 K06 -- Read from csv, populate directory, select random occupation with given percentage chance
 2024-09-16
