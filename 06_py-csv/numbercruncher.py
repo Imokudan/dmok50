@@ -34,16 +34,16 @@ def select_random():
         perc -= values
     return null
 
-'''
+
 ## tester
 mp = {}
-for i in range(1000):
+for i in range(10000000):
     chosen = select_random()
     if chosen not in mp:
         mp[chosen] = 0
     mp[chosen] += 1
 
 print(mp)
-'''
+
 
 print(select_random())
