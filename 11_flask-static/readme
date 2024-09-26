@@ -1,0 +1,19 @@
+Danny Mok
+Ghidorah
+SoftDev
+K11 - Static Pages in Flask
+2024-09-26
+time spent: 0.5
+
+Predictions:
+- When loading the root page, it should still display No Hablo Queso and print __main__ in terminal.
+- Before uncommenting the code in app.py, the text "Is this plaintext, though?"
+will be displayed since it is what is in the /static/foo.html file locally.
+- After the uncomment, h() will be run. It will display a random number in /static/foo.html and still print __main__ in terminal.
+
+Observed:
+- /static/foo returns a 404 error
+- /static/foo.html displays "Is this plaintext, though?"
+Once uncommented the code from app.py...
+- When loading /static/foo.html, it does print __main__ in terminal, and display a random number.
+- When loading /static or /static/foo it leads to 404 server not found.
