@@ -9,16 +9,35 @@
 <html>
 
   <head>
-    <title> {{ foo }} </title>
+    <title>Occupations and Links</title>
   </head>
 
   <body>
-    <table>
-        {% for item in collection %}
-           <tr>  {{item}} </tr>
+    <h2>Team: Cerulean Calm</h2>
+    <p>
+      Team Members: Danny, Alex, Colyi
+    </p>
+    <p>SoftDev - Sep 2024</p>
+
+    <h1>This is a randomly selected occupation:</h1>
+    <p>
+        {{ random_occupation.job }}({{ random_occupation.percentage }}%)<br>
+        Link: {{random_occupation.link}}
+    </p>
+    <table border="1">
+        <tr>
+            <th>Occupation</th>
+            <th>Percentage</th>
+            <th>Link</th>
+        </tr>
+        {% for occupation in occupations %}
+        <tr>
+            <td>{{occupation.job}}</td>
+            <td>{{occupation.percentage}}%</td>
+            <td>{{occupation.link}}</td>
+        </tr>
         {% endfor %}
     </table>
   </body>
 
 </html>
-
