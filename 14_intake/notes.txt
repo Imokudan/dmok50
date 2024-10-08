@@ -1,28 +1,30 @@
-< your heading here >
+Danny Mok
+Ghidorah: Mark, Marco, Danny
+SoftDev
+K14 - Poked around with more flask and html, this time focusing on html forms in tandem with flask and personal python modules
+
+Predictions:
+I predicted that the request obj and request.args methods would not work for the root page, since there is no request data to receive from user inputs
 
 DISCO:
-* 
-* 
-* 
+* Only request.args didn't work for the root page, request obj returns a dictionary called ImmutableMultiDict[]
+* For the /auth page, the request obj returned ImmutableMultiDict[] with two key-value elements in them, while request.args['username'] returned the value of the 'username' element
+* Forms are used in html to receive user input data
+* methods=['GET', 'POST']) gave syntax errors
 -----------------------------------------------------------------------
-
-
 Q/C/C:
-* 
-* 
-* 
+* What was the methods=['GET', 'POST']) portion meant to do?
+* Why wasn't testmod0's methods used?
+* So [__name__ == "__main__"] will be false when the script it is in is imported to another as a module?
 -----------------------------------------------------------------------
 
 
 OTHER?
-* 
-* 
-* 
+* modules are just external python scripts with methods inside them
 -----------------------------------------------------------------------
 
-
-
-
-
-
-
+Question & Answer
+Q: Is it runnable with all the commented-out lines re-enabled? If not, why/how?
+A: For the root page, it is not runnable with all the commented lines re-enabled since one of the lines try accessing
+the value of dictionary element with the key, "username," from the request object, that being an empty dictionary
+called ImmutableMultiDict. Since it is empty, request.args['username'] does not work.
