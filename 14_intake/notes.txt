@@ -1,30 +1,35 @@
 Danny Mok
 Ghidorah: Mark, Marco, Danny
 SoftDev
-K14 - Poked around with more flask and html, this time focusing on html forms in tandem with flask and personal python modules
+K14 - Discovering inputs
+2024-10-07
+time spent: 0.5 
 
-Predictions:
-I predicted that the request obj and request.args methods would not work for the root page, since there is no request data to receive from user inputs
 
 DISCO:
-* Only request.args didn't work for the root page, request obj returns a dictionary called ImmutableMultiDict[]
-* For the /auth page, the request obj returned ImmutableMultiDict[] with two key-value elements in them, while request.args['username'] returned the value of the 'username' element
-* Forms are used in html to receive user input data
-* methods=['GET', 'POST']) gave syntax errors
+* request.args is an immutable dictionary
+* Accessing username from the request.args dictionary in the home page gives a keyerror
+* request.headers gives all sorts of information of the user and the host, such as user-agent and hostname.
+* Submitting the form redirects to /auth
+* using functions in testmod0 is automatically defined after imported
+* Uncommenting nothing returns two headings and a box for user input with submit next to it (listed as form action="/auth" in login.html)
+* methods=['GET', 'POST'] are meant to be inside app.route
+* Two types of input types in form in HTML: text which allows user to type and submit which user can click for server to receive data
+* Pressing submit sends user to route with /auth that returns the text "Waaaa hooo HAAAH" (name of two inputs and the input in username is also on URL)
+* Uncommenting print(request) prints 'http://localhost:5000/' [GET] (request might be defaulted to GET, which is a method that gets the user's input)
+* request.headers returns information about the user and the host
 -----------------------------------------------------------------------
+
+
 Q/C/C:
-* What was the methods=['GET', 'POST']) portion meant to do?
-* Why wasn't testmod0's methods used?
-* So [__name__ == "__main__"] will be false when the script it is in is imported to another as a module?
+* Why do we need to track the request headers?
+* What is the purpose of methods=['GET', 'POST']? Judging by the name of the list it is a part of, they could be new methods but there are no refs to it anywhere else?
+* 
 -----------------------------------------------------------------------
 
 
 OTHER?
-* modules are just external python scripts with methods inside them
+* In usual websites, the submit button doesnt actually redirect the user to another page. It just sends the form response to the url and redirects the user back.
+* 
+* 
 -----------------------------------------------------------------------
-
-Question & Answer
-Q: Is it runnable with all the commented-out lines re-enabled? If not, why/how?
-A: For the root page, it is not runnable with all the commented lines re-enabled since one of the lines try accessing
-the value of dictionary element with the key, "username," from the request object, that being an empty dictionary
-called ImmutableMultiDict. Since it is empty, request.args['username'] does not work.
