@@ -36,7 +36,7 @@ def response_page():
 @app.route("/logout", methods = ['POST'])
 def logout_page():
     # code to logout page and pop session
-    session.pop("username")
+    session.pop("username", None)
     return redirect("/")
 
 if __name__ == "__main__": #false if this file imported as module
