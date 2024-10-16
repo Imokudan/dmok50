@@ -4,11 +4,10 @@
 	SoftDev
 	K17 - Mimic 
 	2024-10-15 
-	time spent: 1 
+	time spent: 2
 -->
-
+<!DOCTYPE html>
 <html>
-
 	<head>
 		<title> MIMIC PAGE </title>
 		<style>
@@ -19,58 +18,75 @@ h1 {
 
 body {
 	background-color: #767676;
+	
 }
 
 nav {
 	float: left;
 	width: 30%;
+    	height: 100%;
+	position: fixed;
+	overflow: auto;
+    	margin-top: -20px;
+	margin-left: 20px;
 }
 
-bruh {
+nav ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+nav p {
 	color: #ffffff;
+}
+
+#main {
+	margin-left: 30%;
 }
 
 html {
 	font-family: Arial, sans-serif;
-	background-color: #565656;
+	background-color: #666666;
+}
+
+footer {
+    	text-align: right;
+	padding: 1px;
+	padding-right: 10px;
+    	background-color: #565656;
+   	color: #707070;
+	font-size: 20px;
 }
 		</style>
 	</head>
+
 	<body>	
 		<center>
-			<h1>
-				h1 foo
-			</h1>
+		<h1> h1 foo </h1>
 		</center>
 
-
 		<nav class="side">
-			<h2> 
-				nav foo
-			</h2>
-			<bruh>
-			<b>
-				dis
-				<br>
-				dat
-				<br>
-				de udda thing
-			</b>
-			<br><br><br><br><br><br>
-			</bruh>
-
-
+		<h2> nav foo </h2>
+		<ul>
+			<p>dis</p>
+			<p>dat</p>
+			<p>de udda thing</p>
+		</ul>
 		</nav>
 
-		<h2>
+		<div id="main">
+			<h2>
 			main foo heading
-		</h2>
-
-		<p>	
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		<br><br>
-		Ligula vulputate placerat mi fringilla sem adipiscing. Mus tortor viverra interdum lectus lobortis. Facilisi nec quam viverra tincidunt urna viverra habitant curabitur. Himenaeos duis consectetur; odio dapibus tellus inceptos. Aliquet felis accumsan amet urna maecenas ex. Imperdiet ultricies enim vestibulum dignissim ex vulputate ante nunc. Vel at natoque id egestas nulla convallis. Praesent risus lobortis feugiat eget nam vestibulum. Risus amet conubia ultrices vulputate condimentum tellus accumsan? Suscipit viverra facilisi risus lobortis eleifend cubilia auctor nulla.
-		</p>
-		<br><br>	
+			</h2>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<br>
+			<br>
+			Ligula vulputate placerat mi fringilla sem adipiscing. Mus tortor viverra interdum lectus lobortis. Facilisi nec quam viverra tincidunt urna viverra habitant curabitur. Himenaeos duis consectetur; odio dapibus tellus inceptos. Aliquet felis accumsan amet urna maecenas ex. Imperdiet ultricies enim vestibulum dignissim ex vulputate ante nunc. Vel at natoque id egestas nulla convallis. Praesent risus lobortis feugiat eget nam vestibulum. Risus amet conubia ultrices vulputate condimentum tellus accumsan? Suscipit viverra facilisi risus lobortis eleifend cubilia auctor nulla.
+			</p>
+		</div>
+    		<footer>
+        		<p>Copyright © Ghidorah: Mark, Marco, Danny</p>
+    		</footer>
 	</body>
 </html>

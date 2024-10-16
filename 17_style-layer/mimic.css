@@ -5,17 +5,30 @@ h1 {
 
 body {
 	background-color: #767676;
+	
 }
 
 nav {
 	float: left;
 	width: 30%;
-    height: 100%;
-    margin-top: -20px;
+    	height: 100%;
+	position: fixed;
+	overflow: auto;
+    	margin-top: -20px;
+	margin-left: 20px;
 }
 
-bruh {
+nav ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+nav p {
 	color: #ffffff;
+}
+
+#main {
+	margin-left: 30%;
 }
 
 html {
@@ -24,7 +37,10 @@ html {
 }
 
 footer {
-    text-align: right;
-    background-color: #565656;
-    color: #707070;
+    	text-align: right;
+	padding: 1px;
+	padding-right: 10px;
+    	background-color: #565656;
+   	color: #707070;
+	font-size: 20px;
 }
