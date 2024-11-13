@@ -18,6 +18,8 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 courses_info = csv.DictReader(open("courses.csv"))
 students_info = csv.DictReader(open("students.csv"))
 
+
+
 c.execute("CREATE TABLE students (name TEXT, age INTEGER, id INTEGER);")
 for x in students_info:
     print(x)
