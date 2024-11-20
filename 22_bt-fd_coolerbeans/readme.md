@@ -17,6 +17,7 @@
   
   q0b If answer to preceding question is 1, cite all resources consulted -- including verbal consultations and/or neighbouring team's readme. 1citation/line.
   - We consulted TopherShouldGetBraids to clarify how to get started with Foundation outside of downloading a zip
+  - Danny consulted the Foundations website to learn how to close all accordions at once
 
   q1 Only to be answered after you have finished... At this point, which FEF do you prefer, and why? Your answer to this Q should be the only portion of your submission that differs from that of your teammate.
   - 
