@@ -20,4 +20,4 @@
   - Danny consulted the Foundations website to learn how to close all accordions at once
 
   q1 Only to be answered after you have finished... At this point, which FEF do you prefer, and why? Your answer to this Q should be the only portion of your submission that differs from that of your teammate.
-  - 
+  - I prefer bootstrap since it's the one that I've used the most before prior to this class.
